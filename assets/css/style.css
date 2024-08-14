@@ -1,0 +1,59 @@
+body {
+    background-color: #DAA520; /* Color dorado */
+    font-family: 'Roboto', sans-serif;
+    padding: 20px; /* Agrega margen dentro de la página */
+}
+
+.navbar {
+    background-color: #000000; /* Color negro */
+}
+
+.navbar-brand {
+    color: #ffffff; /* Color blanco */
+    margin-left: 10px; /* Mueve Scrum Master más cerca del botón de menú */
+}
+
+.container {
+    margin-top: 40px; /* Mueve el recuadro un poco hacia arriba */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 70px); /* Ajusta la altura para evitar que la página se mueva */
+}
+
+.task-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Color negro transparente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.task-box h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-item input[type="text"] {
+    width: 70%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.task-item input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+.task-item.completed input[type="text"] {
+    text-decoration: line-through;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
